@@ -17,7 +17,8 @@ KOSUKE-SHIGEI/for-try
 
 [リモートリポジトリの確認]
 git remote -v
-
+origin  git@github.com:KOSUKE-SHIGEI/for-try-v8.git (fetch)
+origin  git@github.com:KOSUKE-SHIGEI/for-try-v8.git (push)
 
 [リモートリポジトリへのプッシュ]
 git push origin main

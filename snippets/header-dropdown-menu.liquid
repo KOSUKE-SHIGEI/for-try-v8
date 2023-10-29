@@ -5,9 +5,16 @@
   {% render 'header-dropdown-menu' %}
 {% endcomment %}
 
+{% liquid
+  assign header_menu = section.settings.menu
+  if customer and section.setting.menu_for_customer != black and links[section.settings.menu_for_customer] != empty
+    assign header_menu = links[section.settings.menu_for_customer]
+  endif
+%}
+
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
-    {%- for link in section.settings.menu.links -%}
+    {%- for link in header_menu.links -%}
       <li>
         {%- if link.links != blank -%}
           <header-menu>
