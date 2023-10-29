@@ -7,8 +7,8 @@
 
 {% liquid
   assign header_menu = section.settings.menu
-  if customer and section.setting.menu_for_customer != black and links[section.settings.menu_for_customer] != empty
-    assign header_menu = links[section.settings.menu_for_customer]
+  if customer and section.settings.menu_for_customer != blank and linklists[section.settings.menu_for_customer] != empty
+    assign header_menu = linklists[section.settings.menu_for_customer]
   endif
 %}
 
