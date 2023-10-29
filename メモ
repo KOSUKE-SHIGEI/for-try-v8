@@ -14,7 +14,6 @@ shopify theme dev --poll
 リモートリポジトリ
 KOSUKE-SHIGEI/for-try
 
-
 [リモートリポジトリの確認]
 git remote -v
 origin  git@github.com:KOSUKE-SHIGEI/for-try-v8.git (fetch)
@@ -30,3 +29,6 @@ git pull origin main
 git branch → master だった場合
 以下のコマンドで master を main に修正
 git branch -m master main
+
+git pull origin mainでエラーが出た場合
+git config pull.rebase false
