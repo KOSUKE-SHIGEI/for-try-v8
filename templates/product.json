@@ -102,6 +102,7 @@
     },
     "37b57c6c-16dc-471a-94ef-3f063674e7c7": {
       "type": "footer-add-cart",
+      "disabled": true,
       "settings": {
       }
     }
