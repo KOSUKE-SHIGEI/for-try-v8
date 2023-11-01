@@ -1,0 +1,27 @@
+<div class="test">{{ section.id }}</div>
+
+{%- form 'product',
+  section.settings['select-product'],
+  id: product_form_id,
+  class: 'form',
+  novalidate: 'novalidate',
+  data-type: 'add-to-cart-form'
+-%}{% endform %}
+
+{% schema %}
+{
+  "name": "テストです",
+  "settings": [
+    {
+      "type": "product",
+      "id": "select-product",
+      "label": "商品を選択してください"
+    }
+  ],
+  "presets": [
+    {
+      "name": "テストです"
+    }
+  ]
+}
+{% endschema %}
