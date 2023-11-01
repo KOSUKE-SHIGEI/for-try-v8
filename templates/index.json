@@ -72,11 +72,82 @@
       "settings": {
         "product": "mens-downjacket"
       }
+    },
+    "af570fc3-67b4-41b7-8421-b016ec9317a7": {
+      "type": "featured-product",
+      "blocks": {
+        "template--15775038046255__af570fc3-67b4-41b7-8421-b016ec9317a7-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--15775038046255__af570fc3-67b4-41b7-8421-b016ec9317a7-title-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "template--15775038046255__af570fc3-67b4-41b7-8421-b016ec9317a7-price-1": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--15775038046255__af570fc3-67b4-41b7-8421-b016ec9317a7-variant_picker-1": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--15775038046255__af570fc3-67b4-41b7-8421-b016ec9317a7-quantity_selector-1": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--15775038046255__af570fc3-67b4-41b7-8421-b016ec9317a7-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "template--15775038046255__af570fc3-67b4-41b7-8421-b016ec9317a7-share-1": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--15775038046255__af570fc3-67b4-41b7-8421-b016ec9317a7-text-1",
+        "template--15775038046255__af570fc3-67b4-41b7-8421-b016ec9317a7-title-1",
+        "template--15775038046255__af570fc3-67b4-41b7-8421-b016ec9317a7-price-1",
+        "template--15775038046255__af570fc3-67b4-41b7-8421-b016ec9317a7-variant_picker-1",
+        "template--15775038046255__af570fc3-67b4-41b7-8421-b016ec9317a7-quantity_selector-1",
+        "template--15775038046255__af570fc3-67b4-41b7-8421-b016ec9317a7-buy_buttons-1",
+        "template--15775038046255__af570fc3-67b4-41b7-8421-b016ec9317a7-share-1"
+      ],
+      "settings": {
+        "product": "ミルクティー",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "2752b88a-796c-4555-97a4-c2be94626b30"
+    "2752b88a-796c-4555-97a4-c2be94626b30",
+    "af570fc3-67b4-41b7-8421-b016ec9317a7"
   ]
 }
