@@ -95,13 +95,13 @@
     },
     "af6f5a20-d719-4b9e-b714-39f25d3c73fb": {
       "type": "footer-add-cart-2",
-      "disabled": true,
       "settings": {
         "product": "mens-downjacket"
       }
     },
     "37b57c6c-16dc-471a-94ef-3f063674e7c7": {
       "type": "footer-add-cart",
+      "disabled": true,
       "settings": {
       }
     }
