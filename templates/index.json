@@ -67,15 +67,16 @@
         "padding_bottom": 36
       }
     },
-    "62e7f631-d3aa-4de0-a7cf-c36ec27ec842": {
-      "type": "footer-add-cart",
+    "8ace7f0b-34a8-47b0-91f6-1218c8f5919c": {
+      "type": "footer-add-cart-2",
       "settings": {
+        "product": "mens-downjacket"
       }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "62e7f631-d3aa-4de0-a7cf-c36ec27ec842"
+    "8ace7f0b-34a8-47b0-91f6-1218c8f5919c"
   ]
 }
