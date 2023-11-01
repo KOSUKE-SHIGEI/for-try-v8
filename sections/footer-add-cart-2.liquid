@@ -1,3 +1,7 @@
+{% liquid
+  assign product_form_id = 'product-form-' | append: section.id
+  assign product2 = section.settings.product
+-%}
 <style>
   .add-cart-wrapper {
     position: fixed;
@@ -38,11 +42,6 @@
   }
   {%- endunless -%}
 </style>
-
-{% liquid
-  assign product_form_id = 'product-form-' | append: section.id
-  assign product2 = section.settings.product
--%}
 
 <div class="add-cart-wrapper">
   <div class="buy-button-wrapper">
@@ -188,6 +187,8 @@
     </div>
   {%- endunless -%}
 </div>
+
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
 {% schema %}
 {

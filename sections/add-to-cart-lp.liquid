@@ -1,0 +1,21 @@
+{% liquid
+  assign select-product = settings['selected-product']
+%}
+
+{% schema %}
+{
+  "name": "LP用カート追加ボタン",
+  "settings": [
+    {
+      "type": "product",
+      "id": "selected-product",
+      "label": "商品"
+    }
+  ],
+  "presets": [
+    {
+      "name": "LP用カート追加ボタン"
+    }
+  ]
+}
+{% endschema %}
