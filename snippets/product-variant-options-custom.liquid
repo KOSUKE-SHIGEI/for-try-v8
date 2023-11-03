@@ -55,7 +55,6 @@
       {{- 'products.product.value_unavailable' | t: option_value: value -}}
     {%- else -%}
       {{- value -}}
-      {{ value.price | money_with_currency }}
     {%- endif %}
   </option>
 {%- endfor -%}
