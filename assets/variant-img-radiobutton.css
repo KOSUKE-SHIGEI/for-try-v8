@@ -21,7 +21,7 @@
   border: 1px solid #444;
   vertical-align: bottom;
 }
-.product-form__input input[name="radio"]:checked + label.variant-label img {
+.product-form__input input[type="radio"]:checked + label.variant-label img {
   outline: 2px solid #444;
 }
 .product-form__input input[type="radio"] + label:before {
