@@ -1,0 +1,44 @@
+.product-form__input .form__label {
+  font-size: 18px;
+}
+
+.product-form__input .form__label_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product-form__input input[type="radio"] + label.variant-label {
+  border-radius: unset;
+  margin-right: 10px;
+  cursor: pointer;
+  background: none;
+  padding: 3px;
+  margin-right: 10px;
+  background: none;
+}
+.product-form__input label.variant-label img {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #444;
+  vertical-align: bottom;
+}
+.product-form__input input[name="radio"]:checked + label.variant-label img {
+  outline: 2px solid #444;
+}
+.product-form__input input[type="radio"] + label:before {
+  display: none;
+}
+@media screen and (max-width: 750px) {
+  .product-form__input .form__label {
+    font-size: 16px;
+  }
+  .product-form__input .form__label_wrapper {
+    justify-content: space-around;
+  }
+  .product-form__input input[type="radio"] + label.variant-label {
+    margin: 0;
+  }
+  .product-form__input label.variant-label img {
+    width: 60px;
+    height: 60px;
+  }
+}

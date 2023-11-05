@@ -44,7 +44,6 @@
       endcase
     endfor
   -%}
-
   <option
     value="{{ value | escape }}"
     {% if option.selected_value == value %}
@@ -55,6 +54,7 @@
       {{- 'products.product.value_unavailable' | t: option_value: value -}}
     {%- else -%}
       {{- value -}}
+      {{- product.variants[forloop.index0].metafields.footeraddcart.price -}}
     {%- endif %}
   </option>
 {%- endfor -%}

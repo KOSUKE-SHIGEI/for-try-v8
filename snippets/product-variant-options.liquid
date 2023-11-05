@@ -59,8 +59,13 @@
         class="disabled"
       {% endif %}
     >
-    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-      {{ value -}}
+    <label
+      for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+      class="variant-label"
+    >
+      <img
+        src="{{ product.variants[forloop.index0].metafields.Tshirt.image  | img_url : "master"  }}"
+      >
       <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
     </label>
   {%- elsif block.settings.picker_type == 'dropdown' -%}
