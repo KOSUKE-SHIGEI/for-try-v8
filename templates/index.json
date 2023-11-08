@@ -26,6 +26,7 @@
         "heading",
         "button"
       ],
+      "disabled": true,
       "settings": {
         "image_overlay_opacity": 40,
         "image_height": "large",
@@ -41,6 +42,7 @@
     },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
@@ -69,14 +71,22 @@
     },
     "2752b88a-796c-4555-97a4-c2be94626b30": {
       "type": "footer-add-cart3",
+      "disabled": true,
       "settings": {
         "product": "半袖シャツ"
+      }
+    },
+    "78c43ea2-e17e-4951-b2c9-5093a75e202d": {
+      "type": "image",
+      "settings": {
+        "image_picker": "shopify:\/\/shop_images\/blog.jpg"
       }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "2752b88a-796c-4555-97a4-c2be94626b30"
+    "2752b88a-796c-4555-97a4-c2be94626b30",
+    "78c43ea2-e17e-4951-b2c9-5093a75e202d"
   ]
 }
