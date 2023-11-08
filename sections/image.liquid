@@ -1,0 +1,59 @@
+<style>
+  .image_wrapper {
+    width: 100%;
+  }
+  .image_wrapper.first {
+    border: 1px solid red;
+  }
+  .image_wrapper img {
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+  }
+</style>
+<div class="image_wrapper first">
+  {% assign image-prop = section.settings.image_picker %}
+  <img
+    srcset="
+      {%- if image-prop.width >= 165 -%}{{ image-prop | image_url: width: 165 }} 165w,{%- endif -%}
+      {%- if image-prop.width >= 360 -%}{{ image-prop | image_url: width: 360 }} 360w,{%- endif -%}
+      {%- if image-prop.width >= 533 -%}{{ image-prop | image_url: width: 533 }} 533w,{%- endif -%}
+      {%- if image-prop.width >= 720 -%}{{ image-prop | image_url: width: 720 }} 720w,{%- endif -%}
+      {%- if image-prop.width >= 940 -%}{{ image-prop | image_url: width: 940 }} 940w,{%- endif -%}
+      {%- if image-prop.width >= 1066 -%}{{ image-prop | image_url: width: 1066 }} 1066w,{%- endif -%}
+      {{ image-prop | image_url }} {{ image-prop.width }}w
+    "
+    src="{{ image-prop | image_url: width: 533 }}"
+    alt="{{ image-prop.alt | escape }}"
+    class="motion-reduce"
+    loading="lazy"
+    width="{{ image-prop.width }}"
+    height="{{ image-prop.height }}"
+    style="width: 100%; height: 100%; vertical-align: bottom;"
+  >
+</div>
+<div class="image_wrapper">
+  {% assign imageprperty = section.settings.image_picker %}
+  {{
+    imageprperty
+    | image_url: width: imageprperty.width
+    | image_tag: widths: '165, 360, 533, 720, 940, 1066', loading: 'lazy', alt: imageprperty.alt
+  }}
+</div>
+{% schema %}
+{
+  "name": "画像のテスト",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_picker",
+      "label": "画像のテスト"
+    }
+  ],
+  "presets": [
+    {
+      "name": "画像のテスト"
+    }
+  ]
+}
+{% endschema %}
